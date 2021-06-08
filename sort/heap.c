@@ -51,26 +51,3 @@ void meu_heapsort(int n, int v[])
    }
 }
 
-void imprime(int v[], int tam){
-    int i;
-    for(i=0;i<tam;i++){
-        printf("%d ", v[i]);
-    }
-    printf("\n");
-}
-
-int main(){
-
-    int v[9] = {0,3,4,8,9,1,5,7,8};
-
-    printf("\n Vetor antes: ");
-    imprime(v,9);
-
-    meu_heapsort(8,v);
-    
-    printf("\n Vetor Ordenado: ");
-    imprime(v,9);
-
-    return 0;
-}
-

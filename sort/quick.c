@@ -28,28 +28,3 @@ void meu_quicksort (int v[], int p, int r)
    }
 }
 
-// impressao do vetor
-void imprime(int v[], int tam){
-    int i;
-    for(i=0;i<tam;i++){
-        printf("%d ", v[i]);
-    }
-    printf("\n");
-
-}
-
-int main(){
-
-    int v[8] = {3,4,8,9,1,5,7,8};
-
-    printf("\n Vetor antes: ");
-    imprime(v,8);
-
-    // v = vetor, p = indice do pivo, r = ultimo indice valido
-    meu_quicksort(v,0,7);
-    
-    printf("\n Vetor Ordenado: ");
-    imprime(v,8);
-
-    return 0;
-}

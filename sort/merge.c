@@ -66,27 +66,3 @@ void meu_mergesort (int p, int r, int v[])
    }
 }
 
-
-void imprime(int v[], int tam){
-    int i;
-    for(i=0;i<tam;i++){
-        printf("%d ", v[i]);
-    }
-    printf("\n");
-
-}
-
-int main(){
-
-    int v[8] = {3,4,8,9,1,5,7,8};
-
-    printf("\n Vetor antes: ");
-    imprime(v,8);
-
-    meu_mergesort(0,8,v);
-    
-    printf("\n Vetor Ordenado: ");
-    imprime(v,8);
-
-    return 0;
-}
